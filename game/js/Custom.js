@@ -213,9 +213,7 @@ function startInterval2() {
 			);
 			$("dAdventure").onclick = function () {
 				console.log(
-					`Starting adventure with level from localStorage: ${localStorage.getItem(
-						"level"
-					)}`
+					`Starting adventure with level from localStorage: ${localStorage.getItem("level")}`
 				);
 				StartAdventure(localStorage.getItem("level"));
 			};

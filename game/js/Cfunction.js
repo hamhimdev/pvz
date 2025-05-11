@@ -925,9 +925,7 @@ var oP = {
 			cursor: url(images/interface/Pointer.cur),pointer;
 			animation: spritesheetIdle ${$User.Visitor.TimeStep / 10}s steps(30) infinite, moveLeft${balloonId} ${
 				13 * ($User.Visitor.TimeStep / 10)
-			}s linear, bobbing${balloonId} ${
-				2 * ($User.Visitor.TimeStep / 10)
-			}s ease-in-out infinite;`;
+			}s linear, bobbing${balloonId} ${2 * ($User.Visitor.TimeStep / 10)}s ease-in-out infinite;`;
 
 		$("dPZ").appendChild(image);
 

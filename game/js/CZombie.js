@@ -213,9 +213,7 @@ var CZombies = (function (b, a) {
 							(self.FangXiang === "GoRight"
 								? "transform:rotateY(180deg);"
 								: "") +
-								`position:absolute;left:${
-									position.x + delta[0]
-								}px;top:${position.y + delta[1]}px;width:${
+								`position:absolute;left:${position.x + delta[0]}px;top:${position.y + delta[1]}px;width:${
 									position.width * wh[0]
 								}px;height:${position.height * wh[1]}px;`,
 							self.Ele

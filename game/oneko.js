@@ -135,9 +135,7 @@
 
 	function setSprite(name, frame) {
 		const sprite = spriteSets[name][frame % spriteSets[name].length];
-		nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${
-			sprite[1] * 32
-		}px`;
+		nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${sprite[1] * 32}px`;
 	}
 
 	function resetIdleAnimation() {
@@ -218,9 +216,7 @@
 			const offsetY = (Math.random() - 0.5) * 50;
 			heart.style.left = `${centerX + offsetX - 16}px`;
 			heart.style.top = `${centerY + offsetY - 16}px`;
-			heart.style.transform = `translate(-50%, -50%) rotate(${
-				Math.random() * 360
-			}deg) scale(0.75)`;
+			heart.style.transform = `translate(-50%, -50%) rotate(${Math.random() * 360}deg) scale(0.75)`;
 			parent.appendChild(heart);
 
 			setTimeout(() => {

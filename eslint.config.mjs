@@ -14,8 +14,7 @@ export default [
 		},
 		plugins: {
 			"eqeqeq-fix": eqeqeFix,
-			"autofix": {
-				 
+			autofix: {
 				extends: ["plugin:eqeqeq-fix/recommended"],
 			},
 		},
@@ -62,4 +61,3 @@ export default [
 		},
 	},
 ];
-

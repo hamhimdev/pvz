@@ -4220,12 +4220,7 @@ var oCattail = InheritO(oPeashooter, {
 					}
 					bullet.style.left = x + "px";
 					bullet.style.top = y + "px";
-					bullet.style.transform = `rotate(${self.getAngle(
-						x,
-						y,
-						last[0],
-						last[1]
-					)}deg)`;
+					bullet.style.transform = `rotate(${self.getAngle(x, y, last[0], last[1])}deg)`;
 					t++;
 
 					if (t >= ws + 1) {
@@ -4277,12 +4272,7 @@ var oCattail = InheritO(oPeashooter, {
 							}
 							bullet.style.left = x + "px";
 							bullet.style.top = y + "px";
-							bullet.style.transform = `rotate(${self.getAngle(
-								x,
-								y,
-								last[0],
-								last[1]
-							)}deg)`;
+							bullet.style.transform = `rotate(${self.getAngle(x, y, last[0], last[1])}deg)`;
 							t++;
 
 							if (t >= ws + 1) {
@@ -4307,12 +4297,7 @@ var oCattail = InheritO(oPeashooter, {
 						} else {
 							bullet.style.left = (x -= 3) + "px";
 							bullet.style.top = (y -= 3) + "px";
-							bullet.style.transform = `rotate(${self.getAngle(
-								x,
-								y,
-								last[0],
-								last[1]
-							)}deg)`;
+							bullet.style.transform = `rotate(${self.getAngle(x, y, last[0], last[1])}deg)`;
 							if (x <= 0 || y <= 0) {
 								bullet &&
 									((bullet.src = self.PicArr[4]),
@@ -4409,9 +4394,7 @@ var oNutBowling = InheritO(CPlants, {
 		var d = $(c.id);
 		PlayAudio("bowling");
 		EditEle(d.childNodes[1], {
-			style: `animation: wallnutSpin ${
-				0.75 * ($User.Visitor.TimeStep / 10)
-			}s linear infinite`,
+			style: `animation: wallnutSpin ${0.75 * ($User.Visitor.TimeStep / 10)}s linear infinite`,
 		});
 		(function (z, y, q, r, p, x, e, g, b) {
 			var a = z.R;
@@ -4555,9 +4538,7 @@ var oHugeNutBowling = InheritO(oNutBowling, {
 	PrivateBirth(a) {
 		PlayAudio("bowling");
 		EditEle($(a.id).childNodes[1], {
-			style: `animation: hugeWallnutSpin ${
-				1.25 * ($User.Visitor.TimeStep / 10)
-			}s linear infinite`,
+			style: `animation: hugeWallnutSpin ${1.25 * ($User.Visitor.TimeStep / 10)}s linear infinite`,
 		});
 		(function (b, c, n, m, e, g) {
 			var d = oZ.getArZ(n, m, e);
@@ -4600,9 +4581,7 @@ var oBoomNutBowling = InheritO(oNutBowling, {
 	PrivateBirth(a) {
 		PlayAudio("bowling");
 		EditEle($(a.id).childNodes[1], {
-			style: `animation: wallnutSpin ${
-				0.75 * ($User.Visitor.TimeStep / 10)
-			}s linear infinite`,
+			style: `animation: wallnutSpin ${0.75 * ($User.Visitor.TimeStep / 10)}s linear infinite`,
 		});
 		(function (s, q, b, c, m) {
 			var v = s.R;

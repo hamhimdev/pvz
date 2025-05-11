@@ -58,11 +58,7 @@
 								if (coAuthors.length === 1) {
 									allAuthors = `${authorName} and ${coAuthors[0]}`;
 								} else if (coAuthors.length > 1) {
-									allAuthors = `${authorName}, ${coAuthors
-										.slice(0, -1)
-										.join(", ")} and ${
-										coAuthors[coAuthors.length - 1]
-									}`;
+									allAuthors = `${authorName}, ${coAuthors.slice(0, -1).join(", ")} and ${coAuthors[coAuthors.length - 1]}`;
 								} else {
 									allAuthors = authorName;
 								}
