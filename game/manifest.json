@@ -11,7 +11,7 @@
 	"id": "/game",
 	"start_url": "/game",
 	"background_color": "#8CEAFF",
-	"display": "standalone",
+	"display": "fullscreen",
 	"scope": "/game",
 	"theme_color": "#8CEAFF",
 	"shortcuts": [{}],
